@@ -1,7 +1,7 @@
 ## IMDb_Scraper
 Python web scraper that extracts movie information from IMDb.
 Used the "Beautiful Soup" library for parsing HTML and the "Requests" library for making HTTP requests.
-Also implemented error handling, logging, and pagination handling.
+Scraper uses asynchronous programming with 'asyncio' and 'aiohttp' to improve performance by making multiple HTTP requests concurrently. Error handling is implemented to catch and log any exceptions that may occur during the scraping process. Pagination handling is done asynchronously as well.
 
 This scraper allows you to specify a genre and the number of pages you want to scrape. It scrapes movie details such as title, year, rating, directors, cast, and plot summary from IMDb search results. It then saves the scraped data to a JSON file named movies.json.
 
